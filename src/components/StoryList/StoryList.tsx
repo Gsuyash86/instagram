@@ -135,7 +135,10 @@ const StoryList: React.FC = () => {
   return (
     <div className="stories-wrapper">
       {selectedStory ? (
-        <StoryPreview userStory={selectedStory} onClose={handleCloseStoryView} />
+        <StoryPreview
+          userStory={selectedStory}
+          onClose={handleCloseStoryView}
+        />
       ) : (
         storyData.map((story) => (
           <div
