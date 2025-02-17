@@ -1,0 +1,100 @@
+.story-view-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.story-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.username {
+  margin-left: 8px;
+  font-size: 1.2rem;
+  flex: 1;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.story-progress-bar {
+  display: flex;
+  width: 100%;
+  margin: 8px 0;
+}
+
+.progress-container {
+  flex: 1;
+  height: 4px;
+  background-color: gray;
+  margin-right: 2px;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: white;
+  transition: width 0.1s linear;
+}
+
+.progress-bar.filled {
+  width: 100%;
+}
+
+
+.story-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-content img {
+  max-width: 100%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+
+.timestamp {
+  color: lightgray;
+  font-size: 0.9rem;
+  margin-top: 8px;
+}
+
+.story-navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.story-navigation button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
